@@ -11,5 +11,4 @@ build:
 	./build.sh
 
 render-start:
-	curl -LsSf https://astral.sh/uv/install.sh | sh && \
-	PATH="$$HOME/.local/bin:$$PATH" uv run gunicorn task_manager.wsgi
+	curl -LsSf https://astral.sh/uv/install.sh | sh && uv run gunicorn task_manager.wsgi
